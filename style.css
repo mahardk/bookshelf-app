@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #5F30E2;
+  padding: 16px;
+  color: white;
+  text-align: center;
+}
+
+main.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  gap: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin: 0 auto;
+  background: #F8F9FA;
+  padding: 20px;
+}
+
+.shadow {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, .05),
+              0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-group label {
+  width: 120px;
+  font-size: 16px;
+}
+
+.form-group input[type=text],
+.form-group input[type=number] {
+  flex: 1;
+  font-family: Raleway, sans-serif;
+  background: #F5F1FF;
+  border: 2px solid #9475EA;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.btn-submit {
+  align-self: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #5F30E2;
+  background: white;
+  color: #5F30E2;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #5F30E2;
+  color: white;
+}
+
+[data-testid="bookItem"] {
+  border-radius: 8px;
+  padding: 12px;
+  background: white;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+[data-testid="bookItem"] > div {
+  display: flex;
+  gap: 8px;
+}
+
+[data-testid="bookItemIsCompleteButton"],
+[data-testid="bookItemDeleteButton"],
+[data-testid="bookItemEditButton"] {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #5F30E2;
+  background: white;
+  color: #5F30E2;
+  cursor: pointer;
+}
+
+[data-testid="bookItemIsCompleteButton"]:hover,
+[data-testid="bookItemDeleteButton"]:hover,
+[data-testid="bookItemEditButton"]:hover {
+  background: #5F30E2;
+  color: white;
+}
